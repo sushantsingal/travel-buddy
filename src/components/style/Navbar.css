@@ -1,0 +1,38 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212; /* Rich Charcoal background */
+    padding: 1rem 2rem;
+    color: #ffffff; /* Bright White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Electric Cyan for branding */
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links li {
+    font-size: 1rem;
+  }
+  
+  .navbar-links a {
+    color: #b0bec5; /* Muted Silver for links */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #4f46e5; /* Warm Gold on hover */
+  }
+  

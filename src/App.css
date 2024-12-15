@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Inder&display=swap');
+
+@font-face {
+  font-family: Condensed-Black;
+  src: url('./assets/Font/BaseNeueTrial-CondensedBlack.ttf');
+}
+@font-face {
+  font-family: Base-Black;
+  src: url('./assets/Font/BaseNeueTrial-Black.ttf');
+}
+
+/* Common Style */
+#root {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+ul{
+  padding-left: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #030712;
+}
+
+h1{
+  font-family: Base-Black;
+  background-image: linear-gradient(to right, #80E5B2, #893CEB);
+  background-clip: text;
+  color: transparent;
+}
+
+.btn1{
+  background-color: #4F46E5;
+  max-width: none;
+
+}
+
+.btn2{
+  border-color: #4F46E5;
+  background-color: transparent;
+}
+
+.form{
+  font-family: "B612", sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  border: 2px solid;
+  border-radius: 0.5rem;
+}
+
+.form-list{
+  display: grid;
+  justify-content: stretch;
+  row-gap: 1rem;
+}
+
+button{
+  font-family: 'B612';
+  font-weight: bold;
+  margin: 1rem;
+  max-width: 250px;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  list-style: square;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Default Dark Theme */
+body.dark-theme {
+  background-color: #030712;
+  color: #ffffff;
+}
+
+body.dark-theme .navbar {
+  background-color: #030712;
+  color: #ffffff;
+}
+
+body.dark-theme .footer{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-theme .a{
+  color: #ffffff;
+}
+
+body.dark-theme .btn2{
+  color: #ffffff;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-theme .navbar{
+  background-color: #D1D5DB;
+  color: #121212;
+}
+
+body.light-theme .navbar-links{
+  background-color: #D1D5DB;
+}
+
+body.light-theme .footer{
+  background-color: #D1D5DB;
+  color: #000000;
+}
+
+body.light-theme .a{
+  color: #000000;
+}
+
+body.light-theme .home-btn2, .btn2{
+  color: #000000;
+}
+
+body.light-theme h1{
+  background-image: linear-gradient(to right, #22E4EB, #5B54DF);
+}
+
+/* Navbar Styles */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-brand{
+  font-family: Condensed-Black;
+  font-size: 3rem;
+}
+
+.navbar-links{
+  font-family: "B612", serif;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger .bar {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links.show-menu {
+  display: flex;
+}
+
+.theme-toggle {
+  margin: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  transition: transform 0.3s ease, filter 0.3s;
+  border-color: transparent;
+}
+
+.theme-toggle:hover .theme-icon {
+  filter: brightness(1.2);
+}
+
+/* Homepage Style */
+.home{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 1.7rem;
+}
+
+.home-btn1{
+  background-color: #4F46E5;
+}
+
+.home-btn2{
+  border-color: #4F46E5;
+  background-color: transparent;
+}
+
+/* Manager Style */
+.trip-management{
+  padding: 3rem 31rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.trip-list{
+  font-size: 2rem;
+}
+
+.remove-btn {
+  background-color: #E11D48;
+  color: #ffffff;
+  border: none;
+  margin-right: 5rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+  border-radius: 4px;
+}
+
+.trip-item:hover .remove-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Expense Style */
+.expense-tracker{
+  padding: 2rem 26rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tracker-display{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.expense-net{
+  grid-column: 1/3;
+  font-size: 2rem;
+}
+
+.first{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
+/* Todo Style */
+.to-do-list{
+  padding: 5rem 35rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Itinerary Style */
+.itinerary{
+  padding: 5rem 35rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Footer Style */
+.footer{
+  background-color: #000000;
+  padding: 0.3rem;
+}
+
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-brand{
+  font-family: Condensed-Black;
+  font-size: 3rem;
+}
+
+.footer-links{
+  
+  justify-content: center;
+  font-family: B612;
+  padding-right: 10rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Responsive Layouts for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .navbar-links.show-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    border: 1px solid #051642;
+    right: 0;
+    background-color: #030712;
+    width: 43%;
+    padding: 1rem 0;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .trip-management, .expense-tracker, .to-do-list, .itinerary{
+    padding: 0;
+  }
+
+  .footer-nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-links, .navbar-links {
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer .theme-icon{
+    padding: 0;
+  }
+
+  .first{
+    grid-template-columns: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .trip-management, .expense-tracker, .to-do-list, .itinerary {
+    padding: 0.5rem;
+    max-width: 90%;
+  }
+
+
+}
