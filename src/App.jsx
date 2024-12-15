@@ -6,7 +6,7 @@ import ExpenseTracker from "./components/Pages/ExpenseTracker";
 import ToDoList from "./components/Pages/ToDoList";
 import Itinerary from "./components/Pages/Itinerary";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
