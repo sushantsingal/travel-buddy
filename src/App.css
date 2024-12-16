@@ -406,6 +406,7 @@ body.light-theme h1{
 
 @media (max-width: 576px) {
   .navbar {
+    flex-direction: row;
     align-items: center;
     padding: 1rem 0;
   }
