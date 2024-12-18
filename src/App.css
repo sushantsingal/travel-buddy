@@ -136,6 +136,10 @@ body.light-theme h1{
   background-image: linear-gradient(to right, #22E4EB, #5B54DF);
 }
 
+body.light-theme .hamburger .bar{
+  background-color: #000000;
+}
+
 /* Navbar Styles */
 .navbar{
   display: flex;
