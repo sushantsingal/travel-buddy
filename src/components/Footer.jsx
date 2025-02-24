@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import lightLogo from "../assets/img/group-2.png";
-import darkLogo from "../assets/img/group-1.png";
+import lightLogo from "../assets/img/Group-2.png";
+import darkLogo from "../assets/img/Group-1.png";
 
 function footer({theme}) {
     const logoSrc = theme === "light" ? lightLogo : darkLogo;
