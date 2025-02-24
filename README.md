@@ -14,21 +14,21 @@
 
 ## About The Project
 
-![Screen Shot](/image/Screenshot 1.png)
+![Screen Shot](/image/Screenshot%201.png)
 
-![Screen Shot](/image/Screenshot 2.png)
+![Screen Shot](/image/Screenshot%202.png)
 
-![Screen Shot](/image/Screenshot 3.png)
+![Screen Shot](/image/Screenshot%203.png)
 
-![Screen Shot](/image/Screenshot 4.png)
+![Screen Shot](/image/Screenshot%204.png)
 
-![Screen Shot](/image/Screenshot 5.png)
+![Screen Shot](/image/Screenshot%205.png)
 
 These are some Mobile views...
 
-![Screen Shot](/image/Mobile SS.png)
+![Screen Shot](/image/Mobile%20SS.png)
 
-![Screen Shot](/image/Mobile SS1.png)
+![Screen Shot](/image/Mobile%20SS%201.png)
 
 ## Built With
 
