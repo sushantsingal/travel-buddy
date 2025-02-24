@@ -24,7 +24,7 @@
 
 ![Screen Shot](/image/Screenshot%205.png)
 
-These are some Mobile views...
+## These are some Mobile views...
 
 ![Screen Shot](/image/Mobile%20SS.png)
 
