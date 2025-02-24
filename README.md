@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <h3 align="center">Wander Mate</h3>
+  <h2 align="center">Wander Mate</h2>
 
   <p align="center">
     Turn Dreams into Destinations – Plan, Track, and Travel Effortlessly!
